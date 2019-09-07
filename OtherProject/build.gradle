@@ -1,0 +1,10 @@
+buildscript{
+	repositories {
+		mavenLocal()
+	}
+	dependencies {
+		classpath 'com.example:plugin:snapshot'
+	}
+}
+
+apply plugin: 'com.example.plugin'
