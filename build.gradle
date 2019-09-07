@@ -1,1 +1,1 @@
-apply plugin: 'com.example.plugin'
+apply plugin: com.example.plugin.BuildSrcPlugin
