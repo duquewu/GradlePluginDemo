@@ -1,8 +1,17 @@
 plugins {
     id 'org.jetbrains.kotlin.jvm' version '1.3.50'
+    id 'java-gradle-plugin'
 }
 
 dependencies {
    compileOnly gradleApi()
    implementation 'org.jetbrains.kotlin:kotlin-stdlib'
+}
+gradlePlugin{
+    plugins{
+        sometag{
+            id = 'com.example.plugin'
+            implementationClass = 'com.example.plugin.BuildSrcPlugin'
+        }
+    }
 }
