@@ -1,0 +1,6 @@
+class BuildInPlugin implements Plugin<Project>{
+	@Override public void apply(Project project){
+		println("hello form build-in plugin")
+	}
+}
+apply plugin: BuildInPlugin
